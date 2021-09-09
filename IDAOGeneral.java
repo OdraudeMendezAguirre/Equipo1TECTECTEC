@@ -9,13 +9,13 @@ import java.util.List;
 
 /**
  *
- * @author ayrto
+ * @author ayrton
  * @param <T>
  */
 public interface IDAOGeneral <T> {
     public boolean crear (T pojo);
     public boolean modificar (T pojo);
-    public boolean eliminar (long codigo);
-    public T buscarById (long codigo);
-    public List <T> buscarAll(long codigo);
+    public boolean eliminar (long clave);
+    public T buscarById (long clave);
+    public List <T> buscarAll(long clave);
 }
